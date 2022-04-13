@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Tailwind - Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              >GUSTAM RHEZA
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              class="absolute right-4 block lg:hidden"
+              id="menu"
+              name="menu"
+              type="button"
+            >
+              <span
+                class="menu-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="menu-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="menu-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hey peeps 👋🏻 , I'm
+              <span class="block text-4xl font-bold text-dark lg:text-5xl"
+                >Gustam Rheza</span
+              >
+            </h1>
+            <h2 class="mb-5 text-lg font-medium text-dark lg:text-2xl">
+              Gunadarma University Students 🎓
+            </h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary">
+              I'm an creative front end developer, I design & build user
+              interfaces.
+              <span class="block font-bold text-dark">Based in Jakarta.</span>
+            </p>
+            <a
+              href="#"
+              class="rounded-full border-4 border-indigo-300 bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
+              >Learn More</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-0">
+              <img
+                src="dist/img/hero.png"
+                alt="Gustam Rheza"
+                class="mx-auto max-w-full"
+              />
+              <span
+                class="absolute -bottom-10 left-1/2 -z-10 -translate-x-1/2 scale-75 sm:top-10 sm:scale-100 md:top-14 md:scale-125"
+              >
+                <svg
+                  width="300"
+                  height="300"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#FF0066"
+                    d="M27.3,-50.7C34.1,-43.4,37.3,-33.4,43.5,-24.5C49.7,-15.6,58.8,-7.8,64.5,3.3C70.2,14.4,72.6,28.8,65.8,36.7C59,44.6,43.2,45.9,30.7,53.2C18.2,60.5,9.1,73.8,-2.9,78.8C-14.8,83.7,-29.6,80.4,-38.5,71C-47.3,61.6,-50.2,46.1,-53.9,33.3C-57.7,20.4,-62.3,10.2,-65.4,-1.8C-68.5,-13.8,-70.2,-27.7,-62.5,-33.6C-54.8,-39.6,-37.7,-37.6,-25.7,-41.9C-13.7,-46.1,-6.9,-56.6,1.7,-59.5C10.3,-62.5,20.6,-57.9,27.3,-50.7Z"
+                    transform="translate(100 100)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">
+              About me
+            </h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
+              dicta iusto quisquam neque reprehenderit debitis.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="mb-4 text-2xl font-semibold text-dark lg:pt-8 lg:text-3xl"
+            >
+              Follow me!
+            </h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              porro!
+            </p>
+            <div
+              class="-mt-4 flex items-center justify-center md:justify-start"
+            >
+              <!-- Instagram -->
+              <a href="#" target="_blank">
+                <img
+                  src="dist/img/socmed/instagram.png"
+                  class="w-24"
+                  alt="instagram"
+              /></a>
+              <a href="#" target="_blank">
+                <img
+                  src="dist/img/socmed/twitter.png"
+                  class="w-24"
+                  alt="twitter"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="dist/img/socmed/discord.png"
+                  class="w-24"
+                  alt="discord"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="bg-slate-100 pt-36 pb-16">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+            >
+              My Projects
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae facilis sequi rem! Aperiam corrupti voluptates
+              excepturi non soluta facilis id?
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full flex-wrap justify-center px-4">
+          <div class="mb-14 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portfolio/1.png"
+                class="w-full"
+                alt="Everest landing page"
+              />
+            </div>
+
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              Everest Tours Adventure
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              labore illo, laborum fugiat obcaecati tempore?
+            </p>
+          </div>
+          <div class="mb-14 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portfolio/2.png"
+                class="w-full"
+                alt="Architecture"
+              />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              Architecture
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              labore illo, laborum fugiat obcaecati tempore?
+            </p>
+          </div>
+          <div class="mb-14 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portfolio/3.png"
+                class="w-full"
+                alt="My First Portfolio"
+              />
+            </div>
+
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              My First Portfolio
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              labore illo, laborum fugiat obcaecati tempore?
+            </p>
+          </div>
+          <div class="mb-14 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portfolio/4.png"
+                class="w-full"
+                alt="Realtime Weather"
+              />
+            </div>
+
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+              Realtime Weather
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              labore illo, laborum fugiat obcaecati tempore?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Clients Section Start -->
+    <section id="#clients" class="bg-slate-700 pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+            >
+              My Clients
+            </h2>
+            <p class="text-md font-medium text-white opacity-75 md:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+              beatae fugit recusandae!
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="#" class="mx-4 max-w-[120px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/nike.svg" alt="Nike" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/slack.svg" alt="Slack" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/google.svg" alt="Google" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/gojek.svg" alt="Gojek" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+            >
+              Contact Me 👇🏻
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, delectus.
+            </p>
+          </div>
+        </div>
+        <form>
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+          <div class="mb-8 w-full px-4">
+            <label for="name" class="text-base font-bold text-primary"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+            />
+          </div>
+        </form>
+        <div class="mb-8 w-full px-4">
+          <label for="email" class="text-base font-bold text-primary"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          />
+        </div>
+        <div class="mb-8 w-full px-4">
+          <label for="message" class="text-base font-bold text-primary"
+            >Message</label
+          >
+          <textarea
+            type="message"
+            id="message"
+            class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          ></textarea>
+        </div>
+        <div class="w-full px-4">
+          <button
+            class="w-full rounded-full border-4 border-indigo-300 bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+<!-- Footer Start -->
+<footer class="bg-dark pt-24 pb-12">
+<div class="container">
+  <div class="flex flex-wrap text-center md:text-left">
+    <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
+      <h2 class="font-bold text-4xl text-white mb-5">da gustav</h2> 
+      <h3 class="font-bold text-2xl mb-2">Contact Me</h3>
+      <p>gustamrheza@aol.com</p>
+      <p> 285 Fulton St, New York, NY 10007,</p>
+      <p> United States</p>
+    </div>
+    <div class="w-full px-4 mb-12 md:w-1/2">
+      <h3 class="font-semibold text-xl text-white mb-5">Category</h3>
+      <ul class="text-slate-300">
+        <li>
+          <a href="#" class="inline-block text-base hover:text-primary mb-3">Github</a>
+        </li>
+      </ul>
+      <ul class="text-slate-300">
+        <li>
+          <a href="#" class="inline-block text-base hover:text-primary mb-3">Behance</a>
+        </li>
+      </ul>
+      <ul class="text-slate-300">
+        <li>
+          <a href="#" class="inline-block text-base hover:text-primary mb-3">Dribbble</a>
+        </li>
+      </ul>
+  </div>
+  <div class="w-full pt-10 border-t border-slate-700">
+    <p class="font-medium text-slate-500 text-center"> 
+      Made with ❤️ &nbsp; by Gustam Rheza
+    </p>
+  </div>
+</div>
+</footer>
+<!-- Footer End -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
