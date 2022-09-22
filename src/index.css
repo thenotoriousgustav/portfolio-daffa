@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "SK PUPOK";
-  src: url("../public/assets/fonts/SK-Pupok-Trial.ttf") format("ttf");
+  font-family: "SK Pupok";
+  src: url("../public/assets/fonts/SKPupok-Trial.woff2") format("woff2"),
+    url("../public/assets/fonts/SKPupok-Trial.woff") format("woff"),
+    url("../public/assets/fonts/SKPupok-Trial.ttf") format("ttf");
 }
 
 body {

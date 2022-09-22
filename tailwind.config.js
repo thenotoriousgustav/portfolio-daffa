@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        pupok: "SK PUPOK",
+        pupok: ["SK PUPOK", "sans-serif"],
       },
       colors: {
         background: "#fff6ef",
