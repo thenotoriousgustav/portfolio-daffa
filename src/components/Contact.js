@@ -5,12 +5,12 @@ export default function Contact() {
       id='contact'
     >
       <div className='flex flex-col md:flex-row'>
-        <div className='text-center md:text-start'>
-          <h1 className='text-8xl md:text-[9rem] lg:text-[12rem] leading-[1] text-white font-pupok '>
+        <div>
+          <h1 className='text-[5.4rem] md:text-[9rem] lg:text-[12rem] leading-[1] text-white font-pupok '>
             GET IN <span className='block underline'>TOUCH.</span>
           </h1>
 
-          <h1 className='text-8xl md:text-[9rem] lg:text-[12rem] leading-[1] text-black font-pupok absolute top-2 left-2 '>
+          <h1 className='text-[5.4rem] md:text-[9rem] lg:text-[12rem] leading-[1] text-black font-pupok absolute top-2 left-6 md:top-2 md:left-2 '>
             GET IN <span className='block underline'>TOUCH.</span>
           </h1>
         </div>

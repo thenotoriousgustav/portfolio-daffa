@@ -38,7 +38,7 @@ export default function TextScroll() {
 
   return (
     <div className='overflow-hidden overflox-x-hidden w-full'>
-      <div className='relative mt-60 md:mt-80' id='scroll'>
+      <div className='relative h-60 md:h-72' id='scroll'>
         <h2
           ref={scroll}
           className='text-3xl md:text-8xl absolute bottom-32 md:bottom-44 -left-full '

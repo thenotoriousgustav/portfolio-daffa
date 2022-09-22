@@ -41,7 +41,7 @@ export default function About() {
   }, []);
 
   return (
-    <section className='mt-48 px-3 md:ml-28 lg:ml-60' id='about'>
+    <section className='mt-28 lg:mt-40 px-3 md:ml-28 lg:ml-60' id='about'>
       <div className='flex flex-col justify-center items-start mt-8 overflow-hidden '>
         <div className='text-2xl md:text-3xl font-light md:w-8/12 lg:w-7/12 lg:mr-5'>
           <div className='line overflow-hidden h-20 md:h-24'>
